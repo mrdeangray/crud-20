@@ -1,38 +1,152 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 .App {
   text-align: center;
+  height : 100vh;
+  display: grid;
+  grid-template-rows: 60px 1fr;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.header{
+  background-color: black;
   color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+
+}
+.header ul{
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 2px solid greenyellow; */
+  width: 40%;
 }
 
-.App-link {
-  color: #61dafb;
+
+.header ul li{
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.main{
+  background-color: grey;
+  height: 100%;
+}
+.navigation{
+  background-color: royalblue;
+  width:100px ;
+}
+
+.main{
+  width: 100%;
+}
+.center{
+  display: flex;
+
+}
+.box{
+  border: 2px solid black;
+  margin-bottom: 10px;
+  display: flex;
+  font-size: 20px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.box >*{
+  border: 1px solid black;
+  width: 100%;
+  height: 100%;
+}
+.blue{
+  width: 200px;
+  height: 200px;
+  background-color: blue;
+ position: relative;
+ margin: 0 auto;
+
+}
+.orange{
+  width: 50px;
+  height: 50px;
+  background-color: orange;
+  position: absolute;
+ top: 0px;
+}
+.A{
+  font-size: 28px;
+  color: white;
+  position: absolute; 
+right: 10px;
+bottom: 0px;
+
+}
+.B{
+  font-size: 35px;
+  color: white;
+  position: absolute;
+left: 5px;
+bottom: 0;
+}
+
+.red{
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  position: absolute;
+  left: 0;
+  bottom: 50%;
+}
+
+.svg-plane{
+  margin: 0 auto;
+  width: 800px;
+  height: 800px;
+  border: 5px solid black;
+}
+
+.plane-container{
+  position: relative;
+}
+.E{
+  position: absolute;
+  color: white;
+  font-size: 30px;
+  left: 23.5%;
+  top: 15%
+}
+.F{
+  position: absolute;
+  color: white;
+  font-size: 30px;
+  left: 13%;
+  top: 35%;
+}
+.G{
+  position: absolute;
+  color: white;
+  font-size: 30px;
+  left: 34%;
+  top: 35%;
+}
+
+.triangle1{
+  position: relative;
+}
+.H{
+  position: absolute;
+  color: white;
+  font-size: 30px;
+  left: 34%;
+  top: 35%;
 }
